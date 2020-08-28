@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<style>
+    .cen{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<h1 style="text-align: center;" >CoronaVirus Country Wise Data:</h1><br/>
+
+{{#each info as |val key|}}
+
+<h2 style="text-align: center;"> {{val.country}} </h2>
+<h3 style="text-align: center;" class="text-warning"> Total Cases : {{val.cases}} </h3>
+<h3 style="text-align: center;" class="text-success"> Total Recovered : {{val.recovered}} </h3>
+<h3 style="text-align: center;" class="text-danger"> Total Deaths : {{val.deaths}} </h3>
+<img class="cen" src="{{val.countryInfo.flag}}" alt="flag" /><br />
+
+{{/each}}

@@ -1,0 +1,17 @@
+{
+  "name": "covid19",
+  "version": "1.0.0",
+  "description": "covid 19 tracker in node js with help of novelcovid api...",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ankit upadhyay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "nodemon": "^2.0.4",
+    "novelcovid": "^3.0.0"
+  }
+}
